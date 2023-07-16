@@ -5,7 +5,7 @@ export default function WeatherForm() {
   const [search,setSearch] = useState('')
   // const [totalResults, setTotalResults] = useState(0)
   const updateWeather = async (query) => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=a7e695993de0f4dd27081ffac1c6e754`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=a7e695993de0f4dd27081ffac1c6e754` 
     let data = await fetch(url)
     let parsedData = await data.json()
     setArticles(parsedData)
@@ -20,13 +20,14 @@ export default function WeatherForm() {
     // event.preventDefault()
     setSearch(event.target.value)
   }
-  const handleClick = () =>{
+  const handleClick = (e) =>{
     // alert('hello')
     updateWeather(search)
+    e.preventDefault();
   }
 
   useEffect(() => {
-    updateWeather('bongaon')
+    updateWeather('Bongaon')
   }, [])
   // console.log(articles)
   return (

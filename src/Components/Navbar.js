@@ -10,17 +10,17 @@ export default function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <div className="container">
-                        <ul className="navbar-nav d-flex justify-content-evenly" style={{fontFamily: 'fira code',fontWeight:'500'}}>
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="/">Today</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Tomorrow</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Day-3</a>
-                            </li>
-                        </ul>
+                            <ul className="navbar-nav d-flex justify-content-evenly" style={{ fontFamily: 'fira code', fontWeight: '500' }}>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">Today</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/">Tomorrow</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/">Day-3</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
