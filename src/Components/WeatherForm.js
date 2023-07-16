@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Textarea from './Textarea'
 export default function WeatherForm() {
   const [articles, setArticles] = useState(null)
-  const [search,setSearch] = useState('')
+  const [search, setSearch] = useState('')
   // const [totalResults, setTotalResults] = useState(0)
   const updateWeather = async (query) => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=a7e695993de0f4dd27081ffac1c6e754` 
