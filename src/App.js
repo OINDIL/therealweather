@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import WeatherForm from './Components/WeatherForm'
+import ApiState from './Context/ApiState';
+import WeatherForm from './Components/WeatherForm';
+
+
 export default function App() {
   return (
     <div>
-      <Navbar/>
-      <WeatherForm/>
+      <ApiState>
+        <Navbar />
+        <WeatherForm />
+      </ApiState>
     </div>
   )
 }
